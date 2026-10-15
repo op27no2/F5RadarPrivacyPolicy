@@ -41,9 +41,10 @@
 
 <h1>F5 Radar — Privacy Policy</h1>
 <p class="meta">
-  Effective date: <strong>June 4, 2026</strong><br />
-  Applies to the F5 Radar mobile application (Android package
-  <code>com.op27no2.f5radar</code>).
+  Effective date: <strong>October 14, 2026</strong><br />
+  Applies to the F5 Radar mobile application on Android (package
+  <code>com.op27no2.f5radar</code>) and on iPhone and iPad (App Store).
+  Where the two versions differ, this policy says so.
 </p>
 
 <p>
@@ -82,31 +83,46 @@
   doing so disables the location-dependent features.
 </p>
 
+<h3>Camera and motion sensors (AR view)</h3>
+<p>
+  The optional AR storm view uses your device&rsquo;s camera and motion
+  sensors to draw radar data over the live camera image. The camera
+  image is processed on your device only while the AR view is open; it
+  is not recorded, stored, or sent to us or anyone else. You can deny or
+  revoke camera access at any time in your device settings; the rest of
+  the app works without it.
+</p>
+
 <h3>Push notification token</h3>
 <p>
   If you enable severe-weather alerts, the app uses Google Firebase
-  Cloud Messaging (FCM). FCM assigns your installation a registration
-  token so notifications can be delivered. We use this token only to
-  send weather notifications you have opted into. You can disable
-  notifications at any time in the app or your device settings.
+  Cloud Messaging (FCM); on iPhone and iPad, notifications are delivered
+  through Apple Push Notification service (APNs). Your installation is
+  assigned a registration token so notifications can be delivered. We
+  use this token only to send weather notifications you have opted into.
+  You can disable notifications at any time in the app or your device
+  settings.
 </p>
 
 <h3>Diagnostics &amp; usage analytics</h3>
 <p>
-  We use Google Firebase Analytics and Firebase Crashlytics to
-  understand how the app is used and to detect and fix crashes. These
-  tools may collect:
+  We use Google Firebase Crashlytics to detect and fix crashes. On
+  Android, the app also uses Google Firebase Analytics to understand how
+  the app is used (the iPhone and iPad app does not include Firebase
+  Analytics). These tools may collect:
 </p>
 <ul>
-  <li>app interaction events and feature-usage statistics;</li>
   <li>crash reports, stack traces, and diagnostic logs;</li>
+  <li>on Android, app interaction events and feature-usage
+      statistics;</li>
   <li>device and app information such as device model, operating-system
       version, app version, language, general region, and app-instance
       / device identifiers.</li>
 </ul>
 <p>
   This information is used to maintain and improve the app&rsquo;s
-  stability and quality.
+  stability and quality. We also use Firebase App Check, which lets our
+  servers confirm that requests come from a genuine copy of the app.
 </p>
 
 <h3>Map service data</h3>
@@ -120,9 +136,11 @@
 <h3>Purchases</h3>
 <p>
   If you purchase an optional subscription, the transaction is processed
-  by Google Play Billing. We do not receive or store your payment-card
-  details. The app receives your purchase/entitlement status from Google
-  Play in order to unlock paid features.
+  by Google Play Billing (Android) or the Apple App Store (iPhone and
+  iPad). We do not receive or store your payment-card details or your
+  Google or Apple account information. The app receives your
+  purchase/entitlement status from Google Play or Apple in order to
+  unlock paid features.
 </p>
 
 <h3>Server logs</h3>
@@ -162,14 +180,19 @@
 <table>
   <tr><th>Provider</th><th>Purpose</th><th>Privacy policy</th></tr>
   <tr>
-    <td>Google Firebase (Cloud Messaging, Analytics, Crashlytics)</td>
-    <td>Push notifications, analytics, crash reporting</td>
+    <td>Google Firebase (Cloud Messaging, Crashlytics, App Check; Analytics on Android only)</td>
+    <td>Push notifications, crash reporting, app verification, analytics (Android)</td>
     <td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td>
   </tr>
   <tr>
     <td>Google Play Billing</td>
-    <td>Subscription / purchase processing</td>
+    <td>Subscription / purchase processing (Android)</td>
     <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td>
+  </tr>
+  <tr>
+    <td>Apple (App Store, Apple Push Notification service)</td>
+    <td>Subscription / purchase processing and notification delivery (iPhone and iPad)</td>
+    <td><a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></td>
   </tr>
   <tr>
     <td>Mapbox</td>
@@ -196,7 +219,7 @@
 <p>
   We retain analytics and diagnostic data only as long as needed for the
   purposes described, after which it is deleted or aggregated.
-  Provider-held data (Firebase, Mapbox, Google Play) is retained per
+  Provider-held data (Firebase, Mapbox, Google Play, Apple) is retained per
   those providers&rsquo; policies. Server request logs are kept for a
   limited period for operational and security purposes.
 </p>
@@ -219,8 +242,8 @@
 
 <h2>8. Your choices</h2>
 <ul>
-  <li><strong>Location:</strong> grant, limit, or revoke at any time in
-      your device settings.</li>
+  <li><strong>Location and camera:</strong> grant, limit, or revoke at
+      any time in your device settings.</li>
   <li><strong>Notifications:</strong> disable weather alerts in the app
       or your device settings.</li>
   <li><strong>Analytics:</strong> you may reset or limit ad/analytics
